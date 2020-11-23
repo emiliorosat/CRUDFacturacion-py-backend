@@ -1,0 +1,49 @@
+
+que hace: metodo: nombre de funcion: rutas
+
+listar facturas: get : getInvoces() : api/invoces
+crear factura: post : createInvoce(): api/invoces
+actualizar factura: put : updateInvoce(): api/invoces/:id
+eliminar factura: delete : deleteInvoce(): api/invoces/:id
+mostar factura: get : getInvoceById(): api/invoces/:id
+
+crear cliente: post : createClient(): api/clients
+listar clientes: get : getClients(): api/clients
+
+crear producto: post : createProduct(): api/products
+listar productos: get : getProducts(): api/products
+
+
+clases
+
+cliente: id:int, nombre:str, rnc:str
+articulo:  id:int, codigo:str, nombre:str, precio:float, cantidad:int
+factura: id:int, fecha:Date, descripcion:str, clienteId:int, detalle:array[detalle]
+*detalle: id:int, articulo:articulo, facturaId:int, cantidad:int, precio:float 
+
+
+entidades
+
+articulo:
+id
+codigo
+nombre
+precio
+cantidad
+
+cliente:
+id
+nombre
+rnc
+
+factura:
+id
+fecha
+descripcion
+cliente_Id
+
+detalle:
+articulo_id
+factura_id
+cantidad
+precio
