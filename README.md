@@ -8,8 +8,10 @@ Dependencias:
 
 pasos para correr programa:
 
-1. Clonar repositorio 
-```bash git clone "uri repo" ```
+1. Clonar repositorio
+```bash 
+git clone "uri repo" 
+```
 2. acceder a la carpeta del proyecto
 ```bash
 cd CRUDFacturacion-py-backend
