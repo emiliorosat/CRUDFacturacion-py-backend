@@ -12,15 +12,15 @@ pasos para correr programa:
 ```bash 
 git clone "uri repo" 
 ```
-2. acceder a la carpeta del proyecto
+2. Acceder a la carpeta del proyecto
 ```bash
 cd CRUDFacturacion-py-backend
 ```
-3. Instalar liberias
+3. Instalar librerias
 ```bash
 pip fastapi
 ```
-4. ejecutar desde la terminal apuntando a la carpeta del proyecto 
+4. Ejecutar 
 ```bash
 unvicorn main:app
  ```
